@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <style>
+        .custom-ul-style{
+            list-style-type: square;
+            list-style-position:inside ;
+            /* padding: 10px; */
+            list-style-image: url(./markers/leaf.png);
+        }
+        ol{
+            list-style-type:lower-alpha;
+        }
+        /* ol li{
+            color: red;
+        } */
+         /*ol li::marker - pseudo class */
+        ol li::marker{
+            color: red;
+            font-weight: bold;
+        }
+        div>span{
+            color:green
+        }
+        .numeric-list{
+            list-style-type: upper-roman;
+        }
+        dt{
+            font-weight: bold;
+            color: darkgreen;
+        }
+        dd{
+            color: lightgreen;
+            /* margin: 5px 10px 15px 20px; */
+           margin-top: 10px;
+           margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Working with lists in HTML</h1>
+    <h2>Definition list</h2>
+    <dl>
+        <!-- dt - definition title -->
+        <dt>HTML</dt>
+        <!-- definition description -->
+        <dd>Lorem ipsum dolor sit amet
+             consectetur adipisicing elit. Sint, illum.
+              Lorem ipsum dolor, sit amet consectetur 
+              adipisicing elit. Reprehenderit, ipsam.</dd>
+        <dt>CSS</dt>
+   <dd>Lorem ipsum dolor sit amet consectetur adipisicing
+     elit. Sit doloremque eum aliquid esse molestias est
+      maiores nisi praesentium assumenda exercitationem.</dd>
+    </dl>
+        <!-- <div>
+            <h4>Test heading</h4>
+            <span>
+                Hello
+            </span>
+        </div> -->
+        <h2>Include lists</h2>
+        <ol>
+            <li>Lorem ipsum dolor sit amet.
+                <ul>
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Voluptas optio distinctio dolores?</li>
+                    <li>Molestias temporibus magnam ab?</li>
+                    <li>Animi corporis deserunt iste.</li>
+                    <li>At quod aspernatur iste!</li>
+                    <li>Explicabo cupiditate dolorum sit.</li>
+                    <li>Quae repellendus culpa error.</li>
+                </ul>
+            </li>
+           
+            <li>Id minus deserunt perferendis vero.
+                <ul>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Autem deserunt repellendus veniam adipisci?</li>
+                    <li>Tenetur nobis fuga rerum nostrum.</li>
+                </ul>
+            </li>
+            <li>Expedita quisquam recusandae doloribus distinctio.</li>
+            <li>Explicabo reiciendis esse libero numquam?</li>
+            <li>Culpa numquam dicta accusantium corporis!</li>
+        </ol>
+
+
+        <h2>Ordered list with attributes </h2>
+        <ol class="numeric-list" start="10" reversed>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Vitae placeat ipsa ratione quis praesentium deserunt dolor!</li>
+            <li>Optio dolorem rem sunt corporis reprehenderit inventore vitae.</li>
+            <li value="20">Fugiat eveniet, soluta ipsam cupiditate cumque pariatur doloremque!</li>
+            <li>Repudiandae reiciendis repellat numquam nisi animi consectetur cupiditate?</li>
+            <li>Repudiandae reiciendis repellat numquam nisi animi consectetur cupiditate?</li>
+            <li>Repudiandae reiciendis repellat numquam nisi animi consectetur cupiditate?</li>
+            <li>Repudiandae reiciendis repellat numquam nisi animi consectetur cupiditate?</li>
+        </ol>
+    <h2>Ordered list</h2>
+    <ol>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>Vitae placeat ipsa ratione quis praesentium deserunt dolor!</li>
+        <li>Optio dolorem rem sunt corporis reprehenderit inventore vitae.</li>
+        <li>Fugiat eveniet, soluta ipsam cupiditate cumque pariatur doloremque!</li>
+        <li>Repudiandae reiciendis repellat numquam nisi animi consectetur cupiditate?</li>
+    </ol>
+    <h2>Custom styling</h2>
+    <ul class="custom-ul-style">
+        <li>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, ipsum dolor sit amet, consectetur adipisicing.</li>
+        <li>Eum asperiores consequuntur animi consequatur, ab et.</li>
+        <li>Architecto, veniam nostrum. Odio tempore corporis velit?</li>
+        <li>Corrupti quaerat nostrum officiis nemo, praesentium similique.</li>
+        <li>Dolor amet nemo, corporis ad ipsam facilis.</li>
+        <li>Eveniet, optio expedita ducimus tenetur quam veritatis?</li>
+        <li>Laboriosam voluptate aliquam quasi? Exercitationem, voluptates maiores?</li>
+    </ul>
+
+
+
+    <h2>Unordered list</h2>
+    <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li>Necessitatibus laboriosam aspernatur delectus quibusdam adipisci voluptatem.</li>
+        <li>Quod enim, doloribus sit et necessitatibus pariatur!</li>
+        <li>Necessitatibus similique quas cum, explicabo repudiandae adipisci!</li>
+        <li>Earum provident aspernatur dolor distinctio, placeat laudantium?</li>
+    </ul>
+
+    <h2>Ordered list</h2>
+    <ol>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>Vitae placeat ipsa ratione quis praesentium deserunt dolor!</li>
+        <li>Optio dolorem rem sunt corporis reprehenderit inventore vitae.</li>
+        <li>Fugiat eveniet, soluta ipsam cupiditate cumque pariatur doloremque!</li>
+        <li>Repudiandae reiciendis repellat numquam nisi animi consectetur cupiditate?</li>
+    </ol>
+
+    
+</body>
+</html>
