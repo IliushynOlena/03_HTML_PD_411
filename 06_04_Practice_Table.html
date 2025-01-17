@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+        }
+        th, td{
+            padding: 18px 16px;
+            color: white;
+        }
+        caption{
+            text-align: right;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #545353;
+        }
+        .col-1{
+            background-color: #e5e3e3;
+            /* color: #545353; */
+            /* width: 200px;
+            height: 60px; */
+
+            
+        }
+        .col-2{
+            /* color: aliceblue; */
+            background-color: #2eb8d0;
+            /* text-align: center; */
+            /* width: 90px;
+            height: 60px; */
+
+        }
+        .col-3{
+            background-color: #34ba38;
+            /* text-align: center; */
+            /* color: aliceblue;
+            width: 90px;
+            height: 60px; */
+        }
+        .col-4{
+            background-color: #f3e738;
+            /* color: aliceblue;
+            text-align: center;
+            width: 90px;
+            height: 60px; */
+        }
+        
+        .col-5{
+            background-color: #c93620;
+            /* color: aliceblue;
+            text-align: center;
+            width: 90px;
+            height: 60px; */
+        }
+        thead,tfoot{
+            text-transform: uppercase;
+        }
+        thead{
+            border-bottom: 1px solid white;
+        }
+        tfoot{
+            border-top: 1px solid white;
+        }
+        td:first-child, th:first-child{
+            color: #545353;
+        }
+        td:first-child{
+            text-align: left;
+        }
+        td span{
+            border: 1px solid white;
+            font-weight: bold;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        /* span{
+            font-size: 30px;
+            background-color: #34ba38;
+            padding: 15px;
+        }
+       */
+        
+       
+    </style>
+</head>
+<body>
+    <!-- <p>content</p>
+    <p>content</p>
+    <p>content</p>
+    <p>content</p>
+    <p>content</p>
+    <p>
+        <span>content</span>
+        <span>content</span>
+        <span>content</span>
+        <span>content</span>
+        <span>content</span>
+    </p> -->
+    <table>
+        <caption>TITLE TABLE</caption>
+        <colgroup>
+            <col span="1" class="col-1">
+            <col span="1" class="col-2">
+            <col span="1" class="col-3">
+            <col span="1" class="col-4">
+            <col span="1" class="col-5">
+           
+
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Spetification</th>
+                <th>FREE</th> 
+                <th>BASIC</th>
+                <th>STANDART</th>
+                <th>PREMIUM</th>
+            </tr>    
+        </thead>
+        <tfoot>
+            <tr>
+               <th>PRISE</th>
+               <th>$ 0.00</th>
+               <th>$ 9.99</th>
+               <th>$ 19.99</th>
+               <th>$ 29.99</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Lorem ipsum dolor</td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+            </tr>
+            <tr>
+                <td>Ratione deserunt modi</td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+            </tr>
+            <tr>
+                <td>Vel maiores odio</td>
+                <td><span>-</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+            </tr>
+            <tr>
+                <td>Minus vel aperiam natus</td>
+                <td><span>-</span></td>
+                <td><span>-</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+            </tr>
+            <tr>
+                <td>Provid minima sapiente</td>
+                <td><span>-</span></td>
+                <td><span>-</span></td>
+                <td><span>-</span></td>
+                <td><span>+</span></td>
+            </tr>
+            <tr>
+                <td>Eveniet eaque excepturi</td>
+                <td><span>-</span></td>
+                <td><span>-</span></td>
+                <td><span>-</span></td>
+                <td><span>+</span></td>
+            </tr>
+        </tbody>
+    </thead>
+    </table>
+</body>
+</html>
